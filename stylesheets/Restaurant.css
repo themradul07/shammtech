@@ -28,6 +28,8 @@ body {
 
 .banner_img {
     width: 100%;
+    
+    object-fit: cover;
 }
 
 .banner {
@@ -337,7 +339,17 @@ subcategory-list li {
 
   .banner_text {
     font-size: 5vmin;
+        left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
   }
+    .banner_img {
+    width: 100%;
+    height: 25vh;
+    
+    object-fit: cover;
+}
 }
 
 /* Mobile and small devices */
@@ -383,13 +395,18 @@ subcategory-list li {
   .social_right {
     justify-content: flex-start;
   }
-}
 
-/* Small phones */
-@media screen and (max-width: 480px) {
   .category-title {
     font-size: 4vmin;
   }
+
+  .banner_img {
+    width: 100%;
+    height: 30vh;
+    
+    object-fit: cover;
+}
+
 
   .subcategory-item a {
     font-size: 13px;
@@ -402,5 +419,9 @@ subcategory-list li {
 
   .banner_text {
     font-size: 7vmin;
+        left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, 10%);
   }
 }
