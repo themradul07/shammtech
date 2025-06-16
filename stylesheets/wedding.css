@@ -390,3 +390,10 @@ min-height: fit-content;
   object-fit: contain;
   display: block;
 }
+
+
+.groom {
+  background: url('/Resources/groom-bg.avif') center/cover no-repeat;
+  padding: 30px;
+  color: #111;
+}
