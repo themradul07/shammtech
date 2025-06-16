@@ -193,13 +193,26 @@ body {
 /* === Minimal Media Query for Small Screens === */
 @media (max-width: 480px) {
  .ctn-4{
-    display: none;
+    display: block;
+    height: auto;
+    /* overflow: scroll */
  }
 
   .ctn-4-cards {
-    width: 100%;
+    width: 50vw;
     padding: 10px;
+    /* overflow: scroll; */
     justify-content: center;
+  }
+
+  .ctn-4-img {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    /* background: url('/Resources/ctn-4.webp') center/cover no-repeat; */
+    background: antiquewhite;
   }
 
   .flex-card {
