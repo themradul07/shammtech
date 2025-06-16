@@ -192,42 +192,66 @@ body {
 
 /* === Minimal Media Query for Small Screens === */
 @media (max-width: 480px) {
- .ctn-4{
+  .ctn-4 {
     display: block;
     height: auto;
-    /* overflow: scroll */
- }
+  }
+
+  .grid-ctn {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .circle-card {
+    flex: 0 0 auto;
+    min-width: 120px;
+    scroll-snap-align: start;
+  }
 
   .ctn-4-cards {
-    width: 50vw;
-    padding: 10px;
-    /* overflow: scroll; */
-    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .flex-card {
+    flex: 0 0 auto;
+    min-width: 150px;
+    transform: scale(0.9);
+    scroll-snap-align: start;
+  }
+
+  .rect-card {
+    flex: 0 0 auto;
+    min-width: 160px;
+    max-width: unset;
+    scroll-snap-align: start;
   }
 
   .ctn-4-img {
     width: 100%;
     height: 80vh;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    overflow-y: scroll;
-    /* background: url('/Resources/ctn-4.webp') center/cover no-repeat; */
+    overflow-x: scroll;
     background: antiquewhite;
-  }
-
-  .flex-card {
-    transform: scale(0.9);
-  }
-
-  .rect-card {
-    max-width: 100%;
   }
 
   .header {
     font-size: 14px;
   }
-   
-   .footer_rowbox {
+
+  .footer_rowbox {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -239,6 +263,7 @@ body {
     justify-content: center;
     margin-bottom: 20px;
   }
+
   .buttons {
     display: flex;
     flex-direction: row;
@@ -259,20 +284,16 @@ body {
   }
 }
 
-
-/* follow */
-/* Container layout */
+/* === Footer Styles === */
 .footer_rowbox {
   padding: 40px 45px;
   background-color: #f8f8f8;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* align-items: flex-start; */
   border-top: 1px solid #ddd;
 }
 
-/* Heading */
 .footer_rowbox h2 {
   font-size: 18px;
   font-weight: 500;
@@ -280,17 +301,14 @@ body {
   margin-bottom: 20px;
 }
 
-/* Social left (icons list) */
 .social_left {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+  gap: 10px;
 }
 
-
-
-/* Common icon style */
 .social_left li span {
   display: inline-block;
   width: 25px;
@@ -298,10 +316,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  
 }
 
-/* Social icons */
 .flw_facebook {
   background-image: url('/Resources/facebook_logo.svg');
 }
@@ -322,14 +338,6 @@ body {
   background-image: url('/Resources/twitter_logo.svg');
 }
 
-.social_left{
-    display: flex ;
-    gap: 10px;
-    /* justify-content: center;
-    align-items: center; */
-}
-
-/* App store buttons */
 .social_right {
   display: flex;
   gap: 10px;
@@ -350,4 +358,4 @@ body {
   max-height: 70%;
   object-fit: contain;
   display: block;
-};
+}
