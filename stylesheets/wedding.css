@@ -397,3 +397,7 @@ min-height: fit-content;
   padding: 30px;
   color: #111;
 }
+.cvr {
+width: 100vw;  
+object-fit: fill;
+}
