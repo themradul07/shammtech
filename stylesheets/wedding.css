@@ -79,6 +79,12 @@ body {
   overflow: hidden;
 }
 
+.ctn-4-img .rect-card {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 3 / 4;
+}
+
 .rect-ctn {
   width: 100%;
   height: 80%;
@@ -160,7 +166,9 @@ min-height: fit-content;
   /* overflow: hidden; */
   background: url('/Resources/ctn-4.webp') center/cover no-repeat;
 }
-
+.ctn-5{
+  background: url(/Resources/bottom-part.avif) center/cover no-repeat;
+}
 .relative {
   position: relative;
 }
