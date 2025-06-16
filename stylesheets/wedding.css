@@ -63,6 +63,7 @@ body {
 .ctn-2-cards {
   padding: 35px 16px;
   text-align: center;
+  justify-content: center;
   margin: auto;
 }
 
