@@ -213,49 +213,16 @@ body {
   .header {
     font-size: 14px;
   }
-   
-   .footer_rowbox {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30px 20px;
-  }
-
-  .social_left {
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  .buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .social_right {
-    justify-content: center;
-  }
-
-  .social_rbox {
-    width: 120px;
-    height: 40px;
-  }
-
-  .footer_rowbox h2 {
-    margin-bottom: 10px;
-  }
-}
 
 
-/* follow */
-/* Container layout */
-.footer_rowbox {
+  /* strt */
+  .footer_rowbox {
   padding: 40px 45px;
   background-color: #f8f8f8;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* align-items: flex-start; */
+  align-items: flex-start;
   border-top: 1px solid #ddd;
 }
 
@@ -285,7 +252,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  
 }
 
 /* Social icons */
@@ -337,4 +303,200 @@ body {
   max-height: 70%;
   object-fit: contain;
   display: block;
-};
+}
+  /* end */
+
+
+
+
+}
+
+.footer_rowbox {
+  padding: 40px 45px;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-top: 1px solid #ddd;
+}
+
+/* Heading */
+.footer_rowbox h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Social left (icons list) */
+.social_left {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/* Common icon style */
+.social_left li span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* Social icons */
+.flw_facebook {
+  background-image: url('/Resources/facebook_logo.svg');
+}
+
+.flw_youtube {
+  background-image: url('/Resources/youtube_logo.svg');
+}
+
+.flw_insta {
+  background-image: url('/Resources/insta_logo.svg');
+}
+
+.flw_linkedIn {
+  background-image: url('/Resources/linkedin_logo.svg');
+}
+
+.flw_twitter {
+  background-image: url('/Resources/twitter_logo.svg');
+}
+
+.social_left{
+    display: flex ;
+    gap: 10px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+/* App store buttons */
+.social_right {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social_rbox {
+  width: 140px;
+  height: 45px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_rbox_image {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  display: block;
+}
+
+.footer_rowbox {
+  padding: 40px 45px;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-top: 1px solid #ddd;
+}
+
+/* Heading */
+.footer_rowbox h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Social Left */
+.social_left {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+/* Common Icon Style */
+.social_left li span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* Social Icons */
+.flw_facebook { background-image: url('/Resources/facebook_logo.svg'); }
+.flw_youtube { background-image: url('/Resources/youtube_logo.svg'); }
+.flw_insta { background-image: url('/Resources/insta_logo.svg'); }
+.flw_linkedIn { background-image: url('/Resources/linkedin_logo.svg'); }
+.flw_twitter { background-image: url('/Resources/twitter_logo.svg'); }
+
+/* App Store Buttons */
+.social_right {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social_rbox {
+  width: 140px;
+  height: 45px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_rbox_image {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  display: block;
+}
+
+/* ✅ Responsive: Below 768px */
+@media (max-width: 768px) {
+  .footer_rowbox {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .social_left {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .social_right {
+    justify-content: center;
+  }
+
+  .social_rbox {
+    width: 120px;
+    height: 40px;
+  }
+
+  .footer_rowbox h2 {
+    margin-bottom: 10px;
+  }
+}
