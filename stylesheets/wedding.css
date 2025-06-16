@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -406,6 +407,6 @@ min-height: fit-content;
   color: #111;
 }
 .cvr {
-width: 100vw;  
+width: 100%;  
 object-fit: fill;
 }
